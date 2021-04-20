@@ -45,7 +45,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         
         model.setRowCount(0);
         
-        for (Organization organization : directory.getOrganizationList()){
+        for (Organization organization : directory.getOrganizationDirectory()){
             Object[] row = new Object[2];
             row[0] = organization.getOrganizationID();
             row[1] = organization.getName();

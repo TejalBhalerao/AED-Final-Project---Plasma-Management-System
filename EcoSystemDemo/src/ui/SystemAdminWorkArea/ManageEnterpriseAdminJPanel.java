@@ -4,6 +4,7 @@
  */
 package ui.SystemAdminWorkArea;
 
+import Business.DB4OUtil.DB4OUtil;
 import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
@@ -21,8 +22,10 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
 
-    private JPanel userProcessContainer;
     private EcoSystem system;
+    private JPanel userProcessContainer;
+    private Enterprise enterprise;
+    private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
 
     /**
      * Creates new form ManageEnterpriseJPanel

@@ -4,8 +4,10 @@
  */
 package ui.SystemAdminWorkArea;
 
+import Business.DB4OUtil.DB4OUtil;
 import Business.EcoSystem;
 import Business.Network.Network;
+import Home.TableFormat;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JPanel;
@@ -19,17 +21,19 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem system;
+    private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
+
 
     /**
      *
      * Creates new form ManageNetworkJPanel
      */
     public ManageNetworkJPanel(JPanel userProcessContainer, EcoSystem system) {
+        
         initComponents();
-
         this.userProcessContainer = userProcessContainer;
         this.system = system;
-
+        networkJTable.getTableHeader().setDefaultRenderer(new TableFormat());
         populateNetworkTable();
     }
 
@@ -40,7 +44,11 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         for (Network network : system.getNetworkList()) {
             Object[] row = new Object[1];
             row[0] = network.getName();
+            row[1] = network.getState();
+            row[2] = network.getCountry();
             model.addRow(row);
+        }
+        
         }
     }
 
@@ -141,7 +149,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 .addContainerGap(258, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
-
+/*
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
 
         String name = txtNetworkName.getText();
@@ -151,10 +159,10 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
 
         populateNetworkTable();
     }//GEN-LAST:event_btnSubmitActionPerformed
-
+*/
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         userProcessContainer.remove(this);
-         Component[] componentArray = userProcessContainer.getComponents();
+        Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
         SystemAdminWorkAreaJPanel sysAdminwjp = (SystemAdminWorkAreaJPanel) component;
         sysAdminwjp.populateTree();

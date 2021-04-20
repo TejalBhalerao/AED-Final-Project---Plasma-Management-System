@@ -7,8 +7,13 @@ package Business;
 
 import Business.Network.Network;
 import Business.Organization.Organization;
+import Business.People.DonorDirectory;
+import Business.People.DonorReqDirectory;
+import Business.People.PatientDirectory;
+import Business.People.PatientReqDirectory;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
+import Business.UserAccount.UserAccountDirectory;
 import java.util.ArrayList;
 
 /**
@@ -18,6 +23,61 @@ import java.util.ArrayList;
 public class EcoSystem extends Organization{
     
     private static EcoSystem business;
+    private DonorDirectory donorDirectory;
+    private DonorReqDirectory donorReqDirectory;
+    private PatientDirectory patientDirectory;
+   
+
+    public static EcoSystem getBusiness() {
+        return business;
+    }
+
+    public static void setBusiness(EcoSystem business) {
+        EcoSystem.business = business;
+    }
+
+    public DonorDirectory getDonorDirectory() {
+        return donorDirectory;
+    }
+
+    public void setDonorDirectory(DonorDirectory donorDirectory) {
+        this.donorDirectory = donorDirectory;
+    }
+
+    public PatientDirectory getPatientDirectory() {
+        return patientDirectory;
+    }
+
+    public void setPatientDirectory(PatientDirectory patientDirectory) {
+        this.patientDirectory = patientDirectory;
+    }
+
+    public DonorReqDirectory getDonorReqDirectory() {
+        return donorReqDirectory;
+    }
+
+    public void setDonorReqDirectory(DonorReqDirectory donorReqDirectory) {
+        this.donorReqDirectory = donorReqDirectory;
+    }
+
+    public PatientReqDirectory getPatientRequestDirectory() {
+        return patientRequestDirectory;
+    }
+
+    public void setPatientRequestDirectory(PatientReqDirectory patientRequestDirectory) {
+        this.patientRequestDirectory = patientRequestDirectory;
+    }
+
+    public UserAccountDirectory getUserAccountDirectory() {
+        return userAccountDirectory;
+    }
+
+    public void setUserAccountDirectory(UserAccountDirectory userAccountDirectory) {
+        this.userAccountDirectory = userAccountDirectory;
+    }
+    private PatientReqDirectory patientRequestDirectory;
+    private  UserAccountDirectory userAccountDirectory;
+    
     private ArrayList<Network> networkList;
     public static EcoSystem getInstance(){
         if(business==null){

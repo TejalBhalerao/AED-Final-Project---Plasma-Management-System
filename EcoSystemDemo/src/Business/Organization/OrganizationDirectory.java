@@ -13,25 +13,25 @@ import java.util.ArrayList;
  */
 public class OrganizationDirectory {
     
-    private ArrayList<Organization> organizationList;
+    private ArrayList<Organization> organizationDirectory;
 
     public OrganizationDirectory() {
-        organizationList = new ArrayList();
+        organizationDirectory = new ArrayList();
     }
 
-    public ArrayList<Organization> getOrganizationList() {
-        return organizationList;
+    public ArrayList<Organization> getOrganizationDirectory() {
+        return organizationDirectory;
     }
     
     public Organization createOrganization(Type type){
         Organization organization = null;
         if (type.getValue().equals(Type.Doctor.getValue())){
             organization = new DoctorOrganization();
-            organizationList.add(organization);
+            organizationDirectory.add(organization);
         }
         else if (type.getValue().equals(Type.Lab.getValue())){
             organization = new LabOrganization();
-            organizationList.add(organization);
+            organizationDirectory.add(organization);
         }
         return organization;
     }

@@ -35,7 +35,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
     public void populateOrganizationComboBox(){
         organizationJComboBox.removeAllItems();
         
-        for (Organization organization : organizationDir.getOrganizationList()){
+        for (Organization organization : organizationDir.getOrganizationDirectory()){
             organizationJComboBox.addItem(organization);
         }
     }
@@ -43,7 +43,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
     public void populateOrganizationEmpComboBox(){
         organizationEmpJComboBox.removeAllItems();
         
-        for (Organization organization : organizationDir.getOrganizationList()){
+        for (Organization organization : organizationDir.getOrganizationDirectory()){
             organizationEmpJComboBox.addItem(organization);
         }
     }
@@ -53,7 +53,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         
         model.setRowCount(0);
         
-        for (Employee employee : organization.getEmployeeDirectory().getEmployeeList()){
+        for (Employee employee : organization.getEmployeeDirectory().getEmployeeDirectory()){
             Object[] row = new Object[2];
             row[0] = employee.getId();
             row[1] = employee.getName();

@@ -4,6 +4,8 @@
  */
 package Business.Employee;
 
+import java.util.Date;
+
 /**
  *
  * @author raunak
@@ -12,6 +14,13 @@ public class Employee {
     
     private String name;
     private int id;
+    private int contactNumber;
+    private Date dob;
+    private String gender;
+    private String city;
+    private String state;
+    private String HomeAddress;
+    private String specialization;
     private static int count = 1;
 
     public Employee() {
@@ -19,23 +28,86 @@ public class Employee {
         count++;
     }
 
-    public int getId() {
-        return id;
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    
-    public String getName() {
-        return name;
+    public int getId() {
+        return id;
     }
 
-    @Override
-    public String toString() {
-        return name;
+    public void setId(int id) {
+        this.id = id;
     }
-    
-    
+
+    public int getContactNumber() {
+        return contactNumber;
+    }
+
+    public void setContactNumber(int contactNumber) {
+        this.contactNumber = contactNumber;
+    }
+
+    public Date getDob() {
+        return dob;
+    }
+
+    public void setDob(Date dob) {
+        this.dob = dob;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
+    }
+
+    public String getHomeAddress() {
+        return HomeAddress;
+    }
+
+    public void setHomeAddress(String HomeAddress) {
+        this.HomeAddress = HomeAddress;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static void setCount(int count) {
+        Employee.count = count;
+    }
 }
+    
+    
+   

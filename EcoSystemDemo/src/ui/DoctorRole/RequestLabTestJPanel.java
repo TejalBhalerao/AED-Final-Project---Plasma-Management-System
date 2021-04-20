@@ -93,7 +93,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         request.setStatus("Sent");
         
         Organization org = null;
-        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()){
+        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationDirectory()){
             if (organization instanceof LabOrganization){
                 org = organization;
                 break;
