@@ -7,7 +7,7 @@ package Business.WorkQueue;
 import Business.DB4OUtil.DB4OUtil;
 import Business.Enterprise.Enterprise;
 import Business.People.Donor;
-import Business.People.Patient;
+import Business.People.People;
 import Business.UserAccount.UserAccount;
 import java.util.Date;
 
@@ -160,11 +160,11 @@ public abstract class WorkRequest {
         this.type = type;
     }
 
-    public Patient getPatient() {
+    public People getPatient() {
         return patient;
     }
 
-    public void setPatient(Patient patient) {
+    public void setPatient(People patient) {
         this.patient = patient;
     }
 
@@ -203,7 +203,7 @@ public abstract class WorkRequest {
     private Donor donor;
     private Enterprise enterprise;
     private String type;
-    private Patient patient;
+    private People patient;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
 
     private static int count = 1;

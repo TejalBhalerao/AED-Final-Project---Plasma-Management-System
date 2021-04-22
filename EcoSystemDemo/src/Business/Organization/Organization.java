@@ -43,10 +43,11 @@ public abstract class Organization {
     }
     
     public enum Type{
-        Admin("Admin Organization"),  
+        Admin("Admin Organization"), 
+        SysCoordinator("System Coorinator Organization"), 
         Doctor("Doctor Organization"), 
-        Lab("Lab Organization");
-        //Pathologist("Pathologist Organization");
+        Lab("Lab Organization", 
+        Pathologist("Pathologist Organization");
         
         private String value;
         private Type(String value) {

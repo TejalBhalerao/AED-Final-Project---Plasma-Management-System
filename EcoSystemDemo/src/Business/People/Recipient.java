@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Business.Role;
+package Business.People;
 
 /**
  *
  * @author TEJAL
  */
-public class SystemAdminRole {
+public class Recipient {
     
 }
