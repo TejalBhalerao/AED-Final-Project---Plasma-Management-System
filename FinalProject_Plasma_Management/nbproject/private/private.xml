@@ -2,46 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Enterprise/NGOEnterprise.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/ConfigureASystem.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Enterprise/Enterprise.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Network/Network.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/HospitalAdminWorkSpace/ManageOrganizationJPanel.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Organization/Organization.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Enterprise/EnterpriseDirectory.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Account/AccountDirectory.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/LabAssistantRole/HandleTestResultJPanel.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/HospitalAdminWorkSpace/HospitalAdminWorkArea.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/AdminWorkSpace/ManageCitiesJPanel.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/HospitalVisitors/DonorRegistrationForm.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Role/DoctorRole.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Enterprise/CentralLaboratoryEnterprise.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/MainJFrame.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Employee/Employee.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/DB4OUtil/DB4OUtil.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Organization/DoctorOrganization.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Organization/GovernmentFunding.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Person/AwarenessEvent.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/EcoSystem.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/LabAssistantRole/LabWorkAreaJPanel.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/OrganMatchWorkArea/OrganMatchByRecipientJPanel.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/HospitalAdminWorkSpace/ManageShowingInterest.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/HospitalAdminWorkSpace/ManageUserAccountJPanel.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Employee/EmployeeDirectory.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/NGOWorkPlace/NGOWorkArea.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/AdminWorkSpace/OTAWorkArea.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/OrganMatchWorkArea/OrganMatchByDonorJPanel.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/AdminWorkSpace/ManageEnterpriseJPanel.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/RegularExpressionCheck.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Role/SystemAdminRole.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/OrganMatchWorkArea/ManageOrganMatchJPanel.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Enterprise/HospitalEnterprise.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Role/AdminRole.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Account/Account.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/Business/Role/NGORole.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/AdminWorkSpace/ManageEnterpriseAdminJPanel.java</file>
-            <file>file:/C:/Workspace/FinalProject_IMP/src/userInterface/DoctorWorkArea/PatientTestRequestJPanel.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
