@@ -9,6 +9,6 @@ package Business.Role;
  *
  * @author TEJAL
  */
-public class SystemAdminRole {
+public class VisitorRole {
     
 }

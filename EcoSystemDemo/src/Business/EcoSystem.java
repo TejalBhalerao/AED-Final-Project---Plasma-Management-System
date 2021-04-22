@@ -9,7 +9,7 @@ import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.People.DonorDirectory;
 import Business.People.DonorReqDirectory;
-import Business.People.PatientDirectory;
+import Business.People.PeopleDirectory;
 import Business.People.PatientReqDirectory;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
@@ -25,7 +25,7 @@ public class EcoSystem extends Organization{
     private static EcoSystem business;
     private DonorDirectory donorDirectory;
     private DonorReqDirectory donorReqDirectory;
-    private PatientDirectory patientDirectory;
+    private PeopleDirectory patientDirectory;
    
 
     public static EcoSystem getBusiness() {
@@ -44,11 +44,11 @@ public class EcoSystem extends Organization{
         this.donorDirectory = donorDirectory;
     }
 
-    public PatientDirectory getPatientDirectory() {
+    public PeopleDirectory getPatientDirectory() {
         return patientDirectory;
     }
 
-    public void setPatientDirectory(PatientDirectory patientDirectory) {
+    public void setPatientDirectory(PeopleDirectory patientDirectory) {
         this.patientDirectory = patientDirectory;
     }
 
