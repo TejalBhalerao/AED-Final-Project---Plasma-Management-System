@@ -13,25 +13,49 @@ import java.util.ArrayList;
  */
 public class OrganizationDirectory {
     
-    private ArrayList<Organization> organizationDirectory;
+    private ArrayList<Organization> organizationList;
 
     public OrganizationDirectory() {
-        organizationDirectory = new ArrayList();
+        organizationList = new ArrayList();
     }
 
-    public ArrayList<Organization> getOrganizationDirectory() {
-        return organizationDirectory;
+    public ArrayList<Organization> getOrganizationList() {
+        return organizationList;
     }
     
     public Organization createOrganization(Type type){
         Organization organization = null;
         if (type.getValue().equals(Type.Doctor.getValue())){
             organization = new DoctorOrganization();
-            organizationDirectory.add(organization);
+            organizationList.add(organization);
         }
+        
         else if (type.getValue().equals(Type.Lab.getValue())){
-            organization = new LabOrganization();
-            organizationDirectory.add(organization);
+            organization = new LocalLabOrganization();
+            organizationList.add(organization);
+        }
+        else if (type.getValue().equals(Type.Visitor.getValue())){
+            organization = new VisitorOrganization();
+            organizationList.add(organization);
+        }
+       
+        
+        else if (type.getValue().equals(Type.Screening.getValue())){
+            organization = new ScreeningOrganization();
+            organizationList.add(organization);
+        }
+         else if (type.getValue().equals(Type.Radiology.getValue())){
+            organization = new RadiologyOrganization();
+            organizationList.add(organization);
+        }
+        
+        else if (type.getValue().equals(Type.NGO.getValue())){
+            organization = new NGOOrganization();
+            organizationList.add(organization);
+        }
+        else if (type.getValue().equals(Type.GovernmentFunding.getValue())){
+            organization = new GovernmentFunding();
+            organizationList.add(organization);
         }
         return organization;
     }

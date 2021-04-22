@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Business.Organization;
+package Business.Enterprise;
 
-import Business.Role.PathologistRole;
 import Business.Role.Role;
 import java.util.ArrayList;
 
@@ -13,16 +12,13 @@ import java.util.ArrayList;
  *
  * @author TEJAL
  */
-public class PathologistOrganization extends Organization {
+public class AwarenessCampEnterprise extends Enterprise {
     
-    public PathologistOrganization() {
-        super(Organization.Type.Pathologist.getValue());
+    public AwarenessCampEnterprise(String name) {
+        super(name, Enterprise.EnterpriseType.Awareness);
     }
-    
     @Override
     public ArrayList<Role> getSupportedRole() {
-        ArrayList<Role> roles = new ArrayList();
-        roles.add(new PathologistRole());
-        return roles;
+        return null;
     }
 }

@@ -4,11 +4,11 @@
  */
 package ui.DoctorWorkSpace;
 
+import Business.Account.Account;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.DoctorOrganization;
-import Business.UserAccount.UserAccount;
-import Business.WorkQueue.LabTestWorkRequest;
+//import Business.WorkQueue.LabTestWorkRequest;
 import Business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
@@ -23,7 +23,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private DoctorOrganization organization;
     private Enterprise enterprise;
-    private UserAccount userAccount;
+    private Account userAccount;
     /**
      * Creates new form DoctorWorkAreaJPanel
      */

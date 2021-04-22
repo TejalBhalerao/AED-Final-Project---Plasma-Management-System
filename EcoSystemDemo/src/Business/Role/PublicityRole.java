@@ -10,16 +10,16 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
 import javax.swing.JPanel;
-import ui.AdministrativeWorkSpace.WorkArea;
+import ui.AwarenessCamps.AwarenessCamps;
 
 /**
  *
  * @author TEJAL
+ * 
  */
-public class SystemAdminRole extends Role{
+public class PublicityRole extends Role{
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, Account account, Organization organization, Enterprise enterprise, EcoSystem system) {
-        return new WorkArea(userProcessContainer, system);
+    public JPanel createWorkArea(JPanel rightPanel, Account account, Organization organization, Enterprise enterprise, EcoSystem business) {
+        return new AwarenessCamps(rightPanel, business, account, enterprise);
     }
-    
 }

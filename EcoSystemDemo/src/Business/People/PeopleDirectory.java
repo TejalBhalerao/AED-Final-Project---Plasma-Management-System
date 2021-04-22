@@ -6,6 +6,7 @@
 package Business.People;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -13,6 +14,19 @@ import java.util.ArrayList;
  */
 public class PeopleDirectory {
     
+     List<People> peopleList;
+    
+    PeopleDirectory(){
+       peopleList = new ArrayList<People>();
+    }
+
+    public List<People> getPeopleList() {
+        return peopleList;
+    }
+
+    public void setPeopleList(List<People> peopleList) {
+        this.peopleList = peopleList;
+    }
     
     
 }

@@ -5,10 +5,34 @@
  */
 package Business.People;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author TEJAL
  */
 public class VisitorDirectory {
+    
+    private ArrayList<Visitor> visitorList;
+
+    public VisitorDirectory() {
+        visitorList = new ArrayList();
+    }
+
+    public ArrayList<Visitor> getVisitorList() {
+        return visitorList;
+    }
+
+    public void setVisitorList(ArrayList<Visitor> visitorList) {
+        this.visitorList = visitorList;
+    }
+    
+    public Visitor createVisitor(String email, boolean option){
+        Visitor visitor = new Visitor();
+        visitor.setEmail(email);
+        visitor.setOption(option);
+        visitorList.add(visitor);
+        return visitor;
+    }
     
 }
