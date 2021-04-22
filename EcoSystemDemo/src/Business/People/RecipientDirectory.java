@@ -5,15 +5,19 @@
  */
 package Business.People;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 /**
  *
  * @author TEJAL
  */
 public class RecipientDirectory {
     
+<<<<<<< HEAD
     private List<Recipient> recipientList;
     
     public RecipientDirectory(){
@@ -40,4 +44,6 @@ public class RecipientDirectory {
         return newRecipient;
     }
     
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 }

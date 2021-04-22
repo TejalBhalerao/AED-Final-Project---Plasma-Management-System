@@ -1,19 +1,57 @@
 /*
+<<<<<<< HEAD
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+=======
  * To change this template, choose Tools | Templates
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
  * and open the template in the editor.
  */
 package ui.DoctorWorkSpace;
 
+<<<<<<< HEAD
+<<<<<<<< HEAD:EcoSystemDemo/src/ui/DoctorWorkSpace/DoctorWorkAreaJPanel.java
 import Business.Account.Account;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.DoctorOrganization;
 //import Business.WorkQueue.LabTestWorkRequest;
+=======
+import Business.EcoSystem;
+import Business.Enterprise.Enterprise;
+import Business.Organization.DoctorOrganization;
+import Business.UserAccount.UserAccount;
+import Business.WorkQueue.LabTestWorkRequest;
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 import Business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
+<<<<<<< HEAD
+========
+>>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e:EcoSystemDemo/src/ui/DoctorRole/DoctorWorkAreaJPanel.java
+/**
+ *
+ * @author srikar
+ */
+public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
+
+<<<<<<<< HEAD:EcoSystemDemo/src/ui/DoctorWorkSpace/DoctorWorkAreaJPanel.java
+    private JPanel userProcessContainer;
+    private DoctorOrganization organization;
+    private Enterprise enterprise;
+    private Account userAccount;
+========
+>>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e:EcoSystemDemo/src/ui/DoctorRole/DoctorWorkAreaJPanel.java
+    /**
+     * Creates new form DoctorWorkAreaJPanel
+     */
+    public DoctorWorkAreaJPanel() {
+        initComponents();
+    }
+
+=======
 /**
  *
  * @author raunak
@@ -23,7 +61,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private DoctorOrganization organization;
     private Enterprise enterprise;
-    private Account userAccount;
+    private UserAccount userAccount;
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
@@ -55,6 +93,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
     }
 
     
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -64,6 +103,27 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+<<<<<<< HEAD
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+
+        jButton1.setText("View Patients");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Doctor Work Area");
+
+        jButton2.setText("View Request Status");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("Transfer Plasma");
+=======
         jScrollPane1 = new javax.swing.JScrollPane();
         workRequestJTable = new javax.swing.JTable();
         requestTestJButton = new javax.swing.JButton();
@@ -123,12 +183,25 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel.setText("EnterPrise :");
 
         valueLabel.setText("<value>");
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(187, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(182, 182, 182))
+=======
                 .addContainerGap(192, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -145,10 +218,35 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(refreshTestJButton)
                 .addGap(103, 103, 103))
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(45, 45, 45)
+                .addComponent(jButton1)
+                .addGap(18, 18, 18)
+                .addComponent(jButton2)
+                .addGap(18, 18, 18)
+                .addComponent(jButton3)
+                .addContainerGap(213, Short.MAX_VALUE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+=======
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -184,5 +282,6 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton requestTestJButton;
     private javax.swing.JLabel valueLabel;
     private javax.swing.JTable workRequestJTable;
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
     // End of variables declaration//GEN-END:variables
 }

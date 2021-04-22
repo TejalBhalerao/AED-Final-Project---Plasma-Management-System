@@ -9,6 +9,10 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.DoctorOrganization;
 import Business.Organization.Organization;
+<<<<<<< HEAD
+=======
+import Business.UserAccount.UserAccount;
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 import ui.DoctorWorkSpace.DoctorWorkAreaJPanel;
 import javax.swing.JPanel;
 

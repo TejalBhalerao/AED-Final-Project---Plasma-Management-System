@@ -13,6 +13,7 @@ import java.util.Date;
  */
 public class People {
     
+<<<<<<< HEAD
    private String name;
     private int age;
     private String gender;
@@ -146,6 +147,9 @@ public class People {
     public void setSign(String sign) {
         this.sign = sign;
     }
+=======
+   
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
   
  }
 

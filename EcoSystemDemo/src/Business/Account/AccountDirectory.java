@@ -5,16 +5,20 @@
  */
 package Business.Account;
 
+<<<<<<< HEAD
 import Business.Employee.Employee;
 import Business.Role.Role;
 import java.util.ArrayList;
 
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 /**
  *
  * @author TEJAL
  */
 public class AccountDirectory {
     
+<<<<<<< HEAD
     private ArrayList<Account> accountList;
 
     public AccountDirectory() {
@@ -54,4 +58,6 @@ public class AccountDirectory {
         return true;
     }
     
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 }

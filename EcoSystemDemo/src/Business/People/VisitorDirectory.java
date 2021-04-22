@@ -5,14 +5,18 @@
  */
 package Business.People;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 /**
  *
  * @author TEJAL
  */
 public class VisitorDirectory {
     
+<<<<<<< HEAD
     private ArrayList<Visitor> visitorList;
 
     public VisitorDirectory() {
@@ -35,4 +39,6 @@ public class VisitorDirectory {
         return visitor;
     }
     
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 }

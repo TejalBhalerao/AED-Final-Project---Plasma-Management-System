@@ -9,6 +9,7 @@ package Business.People;
  *
  * @author TEJAL
  */
+<<<<<<< HEAD
 public class Recipient  extends People implements Comparable<Recipient>{
     
     private String organ;
@@ -38,5 +39,8 @@ public class Recipient  extends People implements Comparable<Recipient>{
      public int compareTo(Recipient o) {
 		return Integer.compare(o.getPriority(), this.getPriority());
 	}
+=======
+public class Recipient {
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
     
 }

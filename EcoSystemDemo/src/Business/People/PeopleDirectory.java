@@ -6,7 +6,10 @@
 package Business.People;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.List;
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 
 /**
  *
@@ -14,6 +17,7 @@ import java.util.List;
  */
 public class PeopleDirectory {
     
+<<<<<<< HEAD
      List<People> peopleList;
     
     PeopleDirectory(){
@@ -27,6 +31,8 @@ public class PeopleDirectory {
     public void setPeopleList(List<People> peopleList) {
         this.peopleList = peopleList;
     }
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
     
     
 }

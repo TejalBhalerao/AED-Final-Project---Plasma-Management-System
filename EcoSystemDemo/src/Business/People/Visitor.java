@@ -11,6 +11,7 @@ package Business.People;
  */
 public class Visitor {
     
+<<<<<<< HEAD
     private String name;
     private String email;
 
@@ -48,4 +49,6 @@ public class Visitor {
         this.password = password;
     }
     
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 }

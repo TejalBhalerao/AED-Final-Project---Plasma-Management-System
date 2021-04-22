@@ -5,16 +5,20 @@
  */
 package Business.Account;
 
+<<<<<<< HEAD
 import Business.Employee.Employee;
 import Business.Role.Role;
 import Business.WorkQueue.WorkQueue;
 
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 /**
  *
  * @author TEJAL
  */
 public class Account {
     
+<<<<<<< HEAD
     private String username;
     private String password;
     private Employee employee;
@@ -68,4 +72,6 @@ public class Account {
     }
     
     
+=======
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 }

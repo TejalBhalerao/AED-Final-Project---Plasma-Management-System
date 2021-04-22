@@ -9,7 +9,13 @@ import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.People.AwarenessEvent;
 import Business.People.DonorDirectory;
+<<<<<<< HEAD
 import Business.People.PeopleDirectory;
+=======
+import Business.People.DonorReqDirectory;
+import Business.People.PeopleDirectory;
+import Business.People.PatientReqDirectory;
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
 import java.util.ArrayList;
@@ -21,6 +27,64 @@ import java.util.ArrayList;
 public class EcoSystem extends Organization{
     
     private static EcoSystem business;
+<<<<<<< HEAD
+=======
+    private DonorDirectory donorDirectory;
+    private DonorReqDirectory donorReqDirectory;
+    private PeopleDirectory patientDirectory;
+   
+
+    public static EcoSystem getBusiness() {
+        return business;
+    }
+
+    public static void setBusiness(EcoSystem business) {
+        EcoSystem.business = business;
+    }
+
+    public DonorDirectory getDonorDirectory() {
+        return donorDirectory;
+    }
+
+    public void setDonorDirectory(DonorDirectory donorDirectory) {
+        this.donorDirectory = donorDirectory;
+    }
+
+    public PeopleDirectory getPatientDirectory() {
+        return patientDirectory;
+    }
+
+    public void setPatientDirectory(PeopleDirectory patientDirectory) {
+        this.patientDirectory = patientDirectory;
+    }
+
+    public DonorReqDirectory getDonorReqDirectory() {
+        return donorReqDirectory;
+    }
+
+    public void setDonorReqDirectory(DonorReqDirectory donorReqDirectory) {
+        this.donorReqDirectory = donorReqDirectory;
+    }
+
+    public PatientReqDirectory getPatientRequestDirectory() {
+        return patientRequestDirectory;
+    }
+
+    public void setPatientRequestDirectory(PatientReqDirectory patientRequestDirectory) {
+        this.patientRequestDirectory = patientRequestDirectory;
+    }
+
+    public UserAccountDirectory getUserAccountDirectory() {
+        return userAccountDirectory;
+    }
+
+    public void setUserAccountDirectory(UserAccountDirectory userAccountDirectory) {
+        this.userAccountDirectory = userAccountDirectory;
+    }
+    private PatientReqDirectory patientRequestDirectory;
+    private  UserAccountDirectory userAccountDirectory;
+    
+>>>>>>> 5f8eaeead469eab9fad6c663c9464f1f58d8b92e
     private ArrayList<Network> networkList;
     private ArrayList<AwarenessEvent> eventList;
  
