@@ -4,27 +4,56 @@
  */
 package Business.Organization;
 
-import Business.BloodGroup.BloodGroup;
-import Business.BloodGroup.BloodGroup;
 import Business.Employee.EmployeeDirectory;
 import Business.Role.Role;
-import Business.UserAccount.UserAccountDirectory;
+import Business.Account.AccountDirectory;
+import Business.Person.DonorDirectory;
+import Business.Person.PatientDirectory;
+import Business.Person.RecipientDirectory;
+import Business.Person.VisitorDirectory;
 import Business.WorkQueue.WorkQueue;
 import java.util.ArrayList;
 
 /**
  *
- * @author raunak
+ * @author TEJAL
  */
 public abstract class Organization {
 
     private String name;
-    private WorkQueue workQueue;
     private EmployeeDirectory employeeDirectory;
-    private UserAccountDirectory userAccountDirectory;
+    private AccountDirectory accountDirectory;
+    public abstract ArrayList<Role> getSupportedRole();
+    private DonorDirectory donorDirectory;
+    private RecipientDirectory recipientDirectory;
+    private PatientDirectory patientDirectory;
+
+    public PatientDirectory getPatientDirectory() {
+        return patientDirectory;
+    }
+
+    public void setPatientDirectory(PatientDirectory patientDirectory) {
+        this.patientDirectory = patientDirectory;
+    }
+    private VisitorDirectory vd;
     private int organizationID;
-    private static int counter=0;
-    private BloodGroup bloodGroup;
+    private static int counter = 1;
+
+    public AccountDirectory getAccountDirectory() {
+        return accountDirectory;
+    }
+
+    public void setAccountDirectory(AccountDirectory accountDirectory) {
+        this.accountDirectory = accountDirectory;
+    }
+
+    public VisitorDirectory getVd() {
+        return vd;
+    }
+
+    public void setVd(VisitorDirectory vd) {
+        this.vd = vd;
+    }
 
     public static int getCounter() {
         return counter;
@@ -33,22 +62,10 @@ public abstract class Organization {
     public static void setCounter(int counter) {
         Organization.counter = counter;
     }
-
-    public BloodGroup getBloodGroup() {
-        return bloodGroup;
-    }
-
-    public void setBloodGroup(BloodGroup bloodGroup) {
-        this.bloodGroup = bloodGroup;
-    }
     
     public enum Type{
-        Admin("Admin Organization"), 
-        SysCoordinator("System Coorinator Organization"), 
-        Doctor("Doctor Organization"), 
-        Lab("Lab Organization", 
-        Pathologist("Pathologist Organization");
-        
+        Doctor("Doctor Organization (changed) "), BackgroundCheck("Lab Organization"), Visitor("Donor/Recepient"),Screening("Screening Organization"),Radiology("Radiology Organization"),NGO("NGO Organization"),GovernmentFunding("Committee Organization"),Lab("Lab"),
+        Reception("Reception"),CommitteeAdmin("CommitteeAdmin"),PlasmaBankAdmin("Plasma Bank Admin");
         private String value;
         private Type(String value) {
             this.value = value;
@@ -58,34 +75,20 @@ public abstract class Organization {
         }
     }
 
-    public enum PlasmaBankType {
-         
-        PlasmaBank("Plasma Bank Coordinator Organization");
-        private String value;
-
-        private PlasmaBankType(String value) {
-            this.value = value;
-        }
-
-        public String getValue() {
-            return value;
-        }
-     }
-    
     public Organization(String name) {
         this.name = name;
-        workQueue = new WorkQueue();
-        employeeDirectory = new EmployeeDirectory();
-        userAccountDirectory = new UserAccountDirectory();
-        bloodGroup = new BloodGroup();
-        organizationID = counter;
+       
+        this.employeeDirectory = new EmployeeDirectory();
+        this.accountDirectory = new AccountDirectory();
+        this.donorDirectory = new DonorDirectory();
+        this.recipientDirectory = new RecipientDirectory();
+        this.organizationID = counter;
+        this.patientDirectory = new PatientDirectory();
         ++counter;
     }
-
-    public abstract ArrayList<Role> getSupportedRole();
     
-    public UserAccountDirectory getUserAccountDirectory() {
-        return userAccountDirectory;
+    public AccountDirectory getUserAccountDirectory() {
+        return accountDirectory;
     }
 
     public int getOrganizationID() {
@@ -96,21 +99,25 @@ public abstract class Organization {
         return employeeDirectory;
     }
     
+    public DonorDirectory getDonorDirectory() {
+        return donorDirectory;
+    }
+    
+    public RecipientDirectory getRecipientDirectory(){
+        return recipientDirectory;
+    }
+    
     public String getName() {
         return name;
     }
 
-    public WorkQueue getWorkQueue() {
-        return workQueue;
-    }
+   
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setWorkQueue(WorkQueue workQueue) {
-        this.workQueue = workQueue;
-    }
+    
 
     @Override
     public String toString() {
@@ -119,3 +126,4 @@ public abstract class Organization {
     
     
 }
+

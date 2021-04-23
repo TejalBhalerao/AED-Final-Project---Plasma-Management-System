@@ -9,28 +9,10 @@ import Business.Enterprise.EnterpriseDirectory;
 
 /**
  *
- * @author MyPC1
+ * @author patol
  */
 public class Network {
     private String name;
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-    private String state;
-    private String country;
     private EnterpriseDirectory enterpriseDirectory;
     
     public Network(){
