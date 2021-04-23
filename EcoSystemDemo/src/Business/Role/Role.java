@@ -4,22 +4,22 @@
  */
 package Business.Role;
 
-import Business.EcoSystem;
+import Business.ECOSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
+import Business.Account.Account;
 import javax.swing.JPanel;
 
 /**
  *
- * @author raunak
- */
+ * @author TEJAL 
+*/
 public abstract class Role {
-    
     public enum RoleType{
         Admin("Admin"),
         Doctor("Doctor"),
-        LabAssistant("Lab Assistant");
+        LabAssistant("Lab Assistant"),
+        Government("Government Official");
         
         private String value;
         private RoleType(String value){
@@ -37,14 +37,14 @@ public abstract class Role {
     }
     
     public abstract JPanel createWorkArea(JPanel userProcessContainer, 
-            UserAccount account, 
+            Account account, 
             Organization organization, 
             Enterprise enterprise, 
-            EcoSystem business);
+            ECOSystem business);
 
     @Override
     public String toString() {
-        return this.getClass().getName();
+        return this.getClass().getName().substring(14);
     }
     
     

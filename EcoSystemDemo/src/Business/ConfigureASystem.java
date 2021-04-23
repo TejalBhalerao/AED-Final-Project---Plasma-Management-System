@@ -1,18 +1,18 @@
 package Business;
 
+import Business.Account.Account;
 import Business.Employee.Employee;
 import Business.Role.SystemAdminRole;
-import Business.UserAccount.UserAccount;
 
 /**
  *
- * @author rrheg
+ * @author TEJAL
  */
 public class ConfigureASystem {
     
-    public static EcoSystem configure(){
+    public static ECOSystem configure(){
         
-        EcoSystem system = EcoSystem.getInstance();
+        ECOSystem system = ECOSystem.getInstance();
         
         //Create a network
         //create an enterprise
@@ -21,9 +21,9 @@ public class ConfigureASystem {
         //create user account
         
         
-        Employee employee = system.getEmployeeDirectory().createEmployee("sysadmin");
+        Employee employee = system.getEmployeeDirectory().createEmployee("RRH");
         
-        UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+        Account ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
         
         return system;
     }

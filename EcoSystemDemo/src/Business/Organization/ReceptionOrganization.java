@@ -5,19 +5,21 @@
  */
 package Business.Organization;
 
-//import Business.Role.AdminRole;
+import Business.Role.DoctorRole;
 import Business.Role.ReceptionRole;
 import Business.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author srikar
+ * @author patol
  */
-public class ReceptionOrganization extends Organization {
+public class ReceptionOrganization extends Organization{
+    
+    
     
     public ReceptionOrganization() {
-        super(Type.Reception.getValue());
+        super(Organization.Type.Reception.getValue());
     }
     
     @Override
@@ -26,5 +28,5 @@ public class ReceptionOrganization extends Organization {
         roles.add(new ReceptionRole());
         return roles;
     }
-    
+     
 }

@@ -5,31 +5,22 @@
  */
 package Business.Role;
 
-import Business.EcoSystem;
+import Business.Account.Account;
+import Business.ECOSystem;
 import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Organization.DoctorOrganization;
 import Business.Organization.Organization;
-import Business.Organization.ReceptionOrganization;
-import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import ui.DoctorRole.ViewPatientInfoJPanel;
-import ui.ReceptionRole.ReceptionWorkAreaJPanel;
+import userInterface.DoctorWorkArea.PatientTestRequestJPanel;
+import userInterface.ReceptionWorkArea.PatientRegistrationForm;
 
 /**
  *
- * @author srikar
+ * @author patol
  */
-public class ReceptionRole extends Role {
-    
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new ReceptionWorkAreaJPanel(userProcessContainer, account, (ReceptionOrganization)organization, enterprise,business);
+public class ReceptionRole extends Role{
+    @Override
+    public JPanel createWorkArea(JPanel rightPanel, Account account, Organization organization, Enterprise enterprise, ECOSystem business) {
+        return new PatientRegistrationForm(rightPanel,organization);
     }
-
-    /*@Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
-    return new ReceptionWorkAreaJPanel(userProcessContainer, account, (ReceptionOrganization)organization, enterprise,business);
-    }*/
-    
-    
 }
+

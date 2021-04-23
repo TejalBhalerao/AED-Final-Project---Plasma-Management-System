@@ -4,24 +4,22 @@
  */
 package Business.Role;
 
-import Business.EcoSystem;
+import Business.ECOSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
-import ui.AdministrativeWorkSpace.AdminWorkAreaJPanel;
+import Business.Account.Account;
 import javax.swing.JPanel;
+import userInterface.HospitalAdminWorkSpace.HospitalAdminWorkArea;
 
 /**
  *
- * @author raunak
+ * @author srikar
  */
 public class AdminRole extends Role{
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new AdminWorkAreaJPanel(userProcessContainer, enterprise);
+    public JPanel createWorkArea(JPanel userProcessContainer, Account account, Organization organization, Enterprise enterprise, ECOSystem business) {
+        return new HospitalAdminWorkArea(userProcessContainer, enterprise);
     }
-
-    
-    
 }
+
